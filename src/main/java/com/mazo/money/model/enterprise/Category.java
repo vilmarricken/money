@@ -1,4 +1,6 @@
-package com.money.model.enterprise;
+package com.mazo.money.model.enterprise;
+
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,15 +10,13 @@ import javax.persistence.Id;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
-import com.money.model.BasicEntity;
-
 @Entity
 @Table(name = "CATEGORY", indexes = { @Index(columnList = "name", unique = true) })
-public class Category {
+public class Category implements Serializable {
 
 	private String name;
 
-	private String descritpion;
+	private String description;
 
 	public Category() {
 	}
@@ -47,12 +47,12 @@ public class Category {
 	}
 
 	@Column(length = 4000)
-	public String getDescritpion() {
-		return descritpion;
+	public String getDescription() {
+		return description;
 	}
 
-	public void setDescritpion(String descritpion) {
-		this.descritpion = descritpion;
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 }

@@ -1,10 +1,10 @@
-package com.money.service.enterprise;
+package com.mazo.money.service.enterprise;
 
 import java.util.UUID;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import com.money.model.enterprise.Category;
+import com.mazo.money.model.enterprise.Category;
 
 public interface CategoryService extends PagingAndSortingRepository<Category, UUID> {
 	

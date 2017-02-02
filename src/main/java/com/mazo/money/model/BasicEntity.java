@@ -1,4 +1,4 @@
-package com.money.model;
+package com.mazo.money.model;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

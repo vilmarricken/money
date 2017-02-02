@@ -1,11 +1,11 @@
-package com.money.model.enterprise;
+package com.mazo.money.model.enterprise;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Index;
 import javax.persistence.Table;
 
-import com.money.model.BasicEntity;
+import com.mazo.money.model.BasicEntity;
 
 @Entity
 @Table(name="ENTERPRISE", indexes={@Index(columnList="name", unique=true)})
