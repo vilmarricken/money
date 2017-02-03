@@ -10,7 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.mazo.money.controller.enterprise.EnterpriseController;
-import com.mazo.money.model.enterprise.Enterprise;
+import com.mazo.money.model.enterprise.Payee;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -22,7 +22,7 @@ public class EnterpriseControllerTests {
 
 	@Test
 	public void save() throws Exception {
-		Enterprise enterprise = new Enterprise("Angeloni");
+		Payee enterprise = new Payee("Angeloni");
 		controller.save(enterprise);
 		assertNotNull(enterprise.getOid());
 	}

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mazo.money.model.enterprise.Enterprise;
+import com.mazo.money.model.enterprise.Payee;
 import com.mazo.money.service.enterprise.EnterpriseService;
 
 @RestController
@@ -19,11 +19,11 @@ public class EnterpriseController {
 	private EnterpriseService service;
 
 	@RequestMapping(path="enterprise", method=RequestMethod.GET)
-	public Enterprise save(@RequestParam(value = "enterprise", required=true) Enterprise enterprise) {
+	public Payee save(@RequestParam(value = "enterprise", required=true) Payee enterprise) {
 		return service.save(enterprise);
 	}
 
-	public List<Enterprise> listAll(){
+	public List<Payee> listAll(){
 		return new ArrayList<>();
 	}
 	

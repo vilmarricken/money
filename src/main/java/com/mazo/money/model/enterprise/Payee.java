@@ -8,16 +8,16 @@ import javax.persistence.Table;
 import com.mazo.money.model.BasicEntity;
 
 @Entity
-@Table(name="ENTERPRISE", indexes={@Index(columnList="name", unique=true)})
-public class Enterprise extends BasicEntity {
+@Table(name="PAYEE", indexes={@Index(columnList="name", unique=true)})
+public class Payee extends BasicEntity {
 
 	private String name;
 
 	
-	public Enterprise(){
+	public Payee(){
 	}
 	
-	public Enterprise(String name){
+	public Payee(String name){
 		this.name = name;
 	}
 	

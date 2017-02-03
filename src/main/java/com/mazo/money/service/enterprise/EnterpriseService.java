@@ -4,10 +4,10 @@ import java.util.UUID;
 
 import org.springframework.data.repository.PagingAndSortingRepository;
 
-import com.mazo.money.model.enterprise.Enterprise;
+import com.mazo.money.model.enterprise.Payee;
 
-public interface EnterpriseService extends PagingAndSortingRepository<Enterprise, UUID> {
+public interface EnterpriseService extends PagingAndSortingRepository<Payee, UUID> {
 	
-	public Enterprise findByName(String name);
+	public Payee findByName(String name);
 	
 }
